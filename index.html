@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Cube game</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Cube game</h1>
+        <nav class="d-flex align-items-center">
+            <div class="btn btn-primary h-50 mr-3 btn_start">Start</div>
+            <div class="btn btn-primary h-50 mr-3 btn_new_game">New Game</div>
+            <div class="output text-center">
+                <h4>Score</h4>
+                <div class="output_result score">0</div>
+            </div>
+            <div class="output text-center">
+                <h4>Time</h4>
+                <div class="output_result timer"><span class="timer_min">01</span>:<span class="timer_sec">00</span></div>
+            </div>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="field" data-status="disabled">
+            <div class="field_cube"></div>
+        </div>
+        <div class="result">
+            <h3>Result</h3>
+            <div class="result_item_wrap">
+
+            </div>
+        </div>
+    </section>
+</div>
+<div class="modal_wrap">
+    <div class="modal">
+        <h3>Finished</h3>
+        <div class="modal_close">X</div>
+        <div class="modal_score">Your result: <span class="result_user">50</span></div>
+        <form>
+            <label for="name_user" class="modal_name">
+                Name:
+                <input type="text" name="user" class="user_name">
+            </label>
+            <div class="invalid-feedback">
+                Please choose a valid username.
+            </div>
+        </form>
+        <div class="btn btn-success modal_save_btn">Save</div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
